@@ -1,0 +1,494 @@
+{
+    "table_id": "",
+    "table_name": "建设单位考核评价表（140分）",
+    "project_name": "",
+    "project_section": "",
+    "review_id": "",
+    "review_unit": "",
+    "review_staff": "",
+    "review_date": "",
+    "review_status": 0,
+    "under_review_unit": "",
+    "review_due_score": "",
+    "review_calc_score": "",
+    "review_final_score": "",
+    "items": [{
+            "index": "A",
+            "level": 1,
+            "name": "责任落实",
+            "content": "",
+            "method": "",
+            "rule": "",
+            "total": 20,
+            "score": 20,
+            "status": 0,
+            "comments": "",
+            "items": [{
+                "index": "A1",
+                "level": 2,
+                "name": "组织机构及人员配备",
+                "total": 5,
+                "score": 5,
+                "status": 0,
+                "comments": "",
+                "items": [{
+                    "index": "1",
+                    "level": 3,
+                    "name": "未建立专职安全管理部门，扣3分。",
+                    "range": [0, 3],
+                    "score": 0,
+                    "status": 0,
+                    "comments": ""
+                }, {
+                    "index": "2",
+                    "level": 3,
+                    "name": "安全部门负责人不专职的，扣2分。",
+                    "range": [0, 2],
+                    "score": 0,
+                    "status": 0,
+                    "comments": ""
+                }, {
+                    "index": "3",
+                    "level": 3,
+                    "name": "人员数量不满足要求的，扣1-2分。",
+                    "range": [0, 1, 2],
+                    "score": 0,
+                    "status": 0,
+                    "comments": ""
+                }, {
+                    "index": "4",
+                    "level": 3,
+                    "name": "责任未落实或不明确，扣1-3分。",
+                    "range": [0, 1, 2, 3],
+                    "score": 0,
+                    "status": 0,
+                    "comments": ""
+                }, {
+                    "index": "5",
+                    "level": 3,
+                    "name": "未签订责任书，扣3分。",
+                    "range": [0, 3],
+                    "score": 0,
+                    "status": 0,
+                    "comments": ""
+                }, {
+                    "index": "6",
+                    "level": 3,
+                    "name": "责任书签订不规范，发现一份扣1分。",
+                    "range": [0, 1, 2, 3, 4],
+                    "score": 0,
+                    "status": 0,
+                    "comments": ""
+                }]
+            }, {
+                "index": "A2",
+                "level": 2,
+                "name": "规章制度",
+                "total": 5,
+                "score": 5,
+                "status": 0,
+                "comments": "",
+                "items": [{
+                    "index": "1",
+                    "level": 3,
+                    "name": "未见行文，扣5分。",
+                    "range": [0, 5],
+                    "score": 0,
+                    "status": 0,
+                    "comments": ""
+                }, {
+                    "index": "2",
+                    "level": 3,
+                    "name": "制度少一项，扣2分。",
+                    "range": [0, 2, 4, 5],
+                    "score": 0,
+                    "status": 0,
+                    "comments": ""
+                }, {
+                    "index": "3",
+                    "level": 3,
+                    "name": "制度针对性不强、可操作性差，扣1-2分。",
+                    "range": [0, 1, 2],
+                    "score": 0,
+                    "status": 0,
+                    "comments": ""
+                }]
+            }, {
+                "index": "A3",
+                "level": 2,
+                "name": "落实执行情况",
+                "total": 5,
+                "score": 5,
+                "comments": "",
+                "items": [{
+                    "index": "1",
+                    "level": 3,
+                    "name": "执行过程中走过场、形式化，存在明显问题的，发现一处扣2-5分。",
+                    "range": [0, 2, 3, 4, 5],
+                    "score": 0,
+                    "status": 0,
+                    "comments": ""
+                }]
+            }, {
+                "index": "A4",
+                "level": 2,
+                "name": "风险评估",
+                "total": 5,
+                "score": 5,
+                "comments": "",
+                "items": [{
+                    "index": "1",
+                    "level": 3,
+                    "name": "未按要求组织开展桥隧工程施工安全风险评估，扣2-5分。",
+                    "range": [0, 2, 3, 4, 5],
+                    "score": 0,
+                    "status": 0,
+                    "comments": ""
+                }, {
+                    "index": "2",
+                    "level": 3,
+                    "name": "极高风险的施工作业未按要求组织专家论证，发现一项扣3-5分。",
+                    "range": [0, 3, 4, 5],
+                    "score": 0,
+                    "status": 0,
+                    "comments": ""
+                }, {
+                    "index": "3",
+                    "level": 3,
+                    "name": "未组织其它风险评估工作的，发现一处扣2分。",
+                    "range": [0, 2, 4, 5],
+                    "score": 0,
+                    "status": 0,
+                    "comments": ""
+                }]
+            }]
+        }, {
+                "index": "B",
+                "level": 1,
+                "name": "安全生产费用",
+                "content": "",
+                "method": "",
+                "rule": "",
+                "total": 15,
+                "score": 15,
+                "status": 0,
+                "comments": "",
+                "items": [{
+                    "index": "B1",
+                    "level": 2,
+                    "name": "安全生产费用列支情况",
+                    "total": 15,
+                    "score": 15,
+                    "status": 0,
+                    "comments": "",
+                    "items": [{
+                        "index": "1",
+                        "level": 3,
+                        "name": "在招投标文件中，未明确不低于1.5%的安全生产费用，安全生产费用未单独列出，扣10分。",
+                        "range": [0, 10],
+                        "score": 0,
+                        "status": 0,
+                        "comments": ""
+                    }, {
+                        "index": "2",
+                        "level": 3,
+                        "name": "安全生产费用未及时支付，扣5分。",
+                        "range": [0, 5],
+                        "score": 0,
+                        "status": 0,
+                        "comments": ""
+                    }, {
+                        "index": "3",
+                        "level": 3,
+                        "name": "安全生产费用管理和使用不符合要求，扣6-8分。",
+                        "range": [0, 6, 7, 8],
+                        "score": 0,
+                        "status": 0,
+                        "comments": ""
+                    }]
+                }]
+            }, {
+                "index": "C",
+                "level": 1,
+                "name": "安全生产条件管理",
+                "content": "",
+                "method": "",
+                "rule": "",
+                "total": 15,
+                "score": 15,
+                "status": 0,
+                "comments": "",
+                "items": [{
+                    "index": "C1",
+                    "level": 2,
+                    "name": "安全生产条件审查",
+                    "total": 15,
+                    "score": 15,
+                    "status": 0,
+                    "comments": "",
+                    "items": [{
+                        "index": "1",
+                        "level": 3,
+                        "name": "审查不严，存在明显问题的，扣10-15分。",
+                        "range": [0, 10, 11, 12, 13, 14, 15],
+                        "score": 0,
+                        "status": 0,
+                        "comments": ""
+                    }, {
+                        "index": "2",
+                        "level": 3,
+                        "name": "施工过程中，对施工、监理单位履约情况检查不严格，扣5-10分。",
+                        "range": [0, 5, 6, 7, 8, 9, 10],
+                        "score": 0,
+                        "status": 0,
+                        "comments": ""
+                    }]
+                }]
+            }, {
+                "index": "D",
+                "level": 1,
+                "name": "检查考核",
+                "content": "",
+                "method": "",
+                "rule": "",
+                "total": 25,
+                "score": 25,
+                "status": 0,
+                "comments": "",
+                "items": [{
+                    "index": "D1",
+                    "level": 2,
+                    "name": "检查及隐患排查",
+                    "total": 10,
+                    "score": 10,
+                    "status": 0,
+                    "comments": "",
+                    "items": [{
+                        "index": "1",
+                        "level": 3,
+                        "name": "不按计划开展检查及隐患排查工作，扣4-6分。",
+                        "range": [0, 4, 5, 6],
+                        "score": 0,
+                        "status": 0,
+                        "comments": ""
+                    }, {
+                        "index": "2",
+                        "level": 3,
+                        "name": "检查没有记录，不闭合，发现一处扣2分。",
+                        "range": [0, 2, 4, 6, 8, 10],
+                        "score": 0,
+                        "status": 0,
+                        "comments": ""
+                    }, {
+                        "index": "3",
+                        "level": 3,
+                        "name": "特殊时段安全检查没有工作安排，值守不到位，扣3-5分。",
+                        "range": [0, 3, 4, 5],
+                        "score": 0,
+                        "status": 0,
+                        "comments": ""
+                    }, {
+                        "index": "1",
+                        "level": 3,
+                        "name": "没有检查、落实记录，发现一次扣2分。",
+                        "range": [0, 2, 4, 6, 8, 10],
+                        "score": 0,
+                        "status": 0,
+                        "comments": ""
+                    }]
+                }]
+            }, {
+                    "index": "D2",
+                    "level": 2,
+                    "name": "考核评价",
+                    "total": 15,
+                    "score": 15,
+                    "status": 0,
+                    "comments": "",
+                    "items": [{
+                        "index": "1",
+                        "level": 3,
+                        "name": "自我考核评价走过场或不及时的，扣4-6分。",
+                        "range": [0, 4, 5, 6],
+                        "score": 0,
+                        "status": 0,
+                        "comments": ""
+                    }, {
+                        "index": "2",
+                        "level": 3,
+                        "name": "对施工和监理单位的考核评价走过场或不及时，扣6-10分。",
+                        "range": [0, 6, 7, 8, 9, 10],
+                        "score": 0,
+                        "status": 0,
+                        "comments": ""
+                    }, {
+                        "index": "3",
+                        "level": 3,
+                        "name": "考核评价资料欠真实、准确，发现一处扣3分。",
+                        "range": [0, 3, 6, 9, 12, 15],
+                        "score": 0,
+                        "status": 0,
+                        "comments": ""
+                    }]
+                }]
+            }, {
+                "index": "E",
+                "level": 1,
+                "name": "事故应急",
+                "content": "",
+                "method": "",
+                "rule": "",
+                "total": 15,
+                "score": 15,
+                "status": 0,
+                "comments": "",
+                "items": [{
+                    "index": "E1",
+                    "level": 2,
+                    "name": "事故报告",
+                    "total": 10,
+                    "score": 10,
+                    "status": 0,
+                    "comments": "",
+                    "items": [{
+                        "index": "1",
+                        "level": 3,
+                        "name": "未执行事故快报或瞒报迟报事故，扣10分。",
+                        "range": [0, 10],
+                        "score": 0,
+                        "status": 0,
+                        "comments": ""
+                    }, {
+                        "index": "2",
+                        "level": 3,
+                        "name": "未执行月报制度，扣2分。",
+                        "range": [0, 2],
+                        "score": 0,
+                        "status": 0,
+                        "comments": ""
+                    }, {
+                        "index": "3",
+                        "level": 3,
+                        "name": "发生事故未按“四不放过”原则进行处理，扣4-8分。",
+                        "range": [0, 4, 5, 6, 7, 8],
+                        "score": 0,
+                        "status": 0,
+                        "comments": ""
+                    }, {
+                        "index": "4",
+                        "level": 3,
+                        "name": "未建立事故管理档案，扣2分。",
+                        "range": [0, 2],
+                        "score": 0,
+                        "status": 0,
+                        "comments": ""
+                    }]
+                }, {
+                    "index": "E2",
+                    "level": 2,
+                    "name": "应急预案",
+                    "total": 5,
+                    "score": 5,
+                    "status": 0,
+                    "comments": "",
+                    "items": [{
+                        "index": "1",
+                        "level": 3,
+                        "name": "未编制预案，扣5分。",
+                        "range": [0, 5],
+                        "score": 0,
+                        "status": 0,
+                        "comments": ""
+                    }, {
+                        "index": "2",
+                        "level": 3,
+                        "name": "预案针对性差或演练不及时，扣1-3分。",
+                        "range": [0, 1, 2, 3],
+                        "score": 0,
+                        "status": 0,
+                        "comments": ""}]
+                }]
+            }, {
+                "index": "F",
+                "level": 1,
+                "name": "政府主管部门安全专项工作",
+                "content": "",
+                "method": "",
+                "rule": "",
+                "total": 10,
+                "score": 10,
+                "status": 0,
+                "comments": "",
+                "items": [{
+                    "index": "F1",
+                    "level": 2,
+                    "name": "政府主管部门安全专项工作落实情况",
+                    "total": 10,
+                    "score": 10,
+                    "status": 0,
+                    "comments": "",
+                    "items": [{
+                        "index": "1",
+                        "level": 3,
+                        "name": "未制定安全专项工作方案或计划，发现一次扣5分。",
+                        "range": [0, 5],
+                        "score": 0,
+                        "status": 0,
+                        "comments": ""
+                    }, {
+                        "index": "2",
+                        "level": 3,
+                        "name": "安全专项工作落实不到位，发现一次扣2-4分。",
+                        "range": [0, 2, 3, 4],
+                        "score": 0,
+                        "status": 0,
+                        "comments": ""
+                    }, {
+                        "index": "3",
+                        "level": 3,
+                        "name": "未制定“平安工地”建设方案，扣10分。",
+                        "range": [0, 10],
+                        "score": 0,
+                        "status": 0,
+                        "comments": ""
+                    }, {
+                        "index": "4",
+                        "level": 3,
+                        "name": "“平安工地”建设要求未落实到位，扣3-5分。",
+                        "range": [0, 3, 4, 5],
+                        "score": 0,
+                        "status": 0,
+                        "comments": ""
+                    }]
+                }]
+            }, {
+                "index": "G",
+                "level": 1,
+                "name": "建设单位工作效能",
+                "content": "",
+                "method": "",
+                "rule": "",
+                "total": 40,
+                "score": 10,
+                "status": 0,
+                "comments": "",
+                "items": [{
+                    "index": "G1",
+                    "level": 2,
+                    "name": "所管理的监理单位和施工单位考核评价情况",
+                    "total": 40,
+                    "score": 40,
+                    "status": 0,
+                    "comments": "",
+                    "items": [{
+                        "index": "1",
+                        "level": 3,
+                        "name": "监理单位各合同段考核评价得分平均值×0.1＋施工单位各合同段考核评价得分平均值×0.3即为建设单位工作效能得分。",
+                        "range": [],
+                        "score": 0,
+                        "status": 0,
+                        "comments": ""
+                    }]
+                }]
+            }]
+}

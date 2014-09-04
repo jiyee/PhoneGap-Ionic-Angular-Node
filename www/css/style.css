@@ -26,6 +26,11 @@
     font-size: 13px;
 }
 
+.user-status .item .row a {
+    text-decoration: none;
+    color: #333;
+}
+
 .user-online {
     display: block;
     width: 32px;
@@ -44,4 +49,13 @@
 
 .last-review .item h3 {
     margin: 0;
+}
+
+.contact-name, .contact-tel, .contact-mobile {
+    font-size: 1.2em;
+}
+
+.contact-tel a, .contact-mobile a {
+    text-decoration: none;
+    color: #333;
 }

@@ -1,4 +1,4 @@
-<ion-view title="login">
+<ion-view>
     <ion-header-bar align-title="center" class="bar-calm">
         <h1 class="title">监利至江陵高速公路项目第一合同段</h1>
     </ion-header-bar>
@@ -10,13 +10,13 @@
             <div class="item item-complex">
                 <div class="row">
                     <div class="col col-20">
-                        <i class="user-online"></i>蹇元平
+                        <a href="#/contact/0"><i class="user-online"></i>蹇元平</a>
                     </div>
                     <div class="col col-20">
-                        <i class="user-online"></i>龙海生
+                        <a href="#/contact/1"><i class="user-online"></i>龙海生</a>
                     </div>
                     <div class="col col-20">
-                        <i class="user-offline"></i>何红民
+                        <a href="#/contact/2"><i class="user-offline"></i>何红民</a>
                     </div>
                 </div>
             </div>
@@ -69,9 +69,9 @@
 
     <ion-footer-bar class="bar-positive">
         <div class="row" style="padding-top: 0;padding-bottom: 0;">
-            <button class="button col">考核评价</button>
-            <button class="button col">自评得分</button>
-            <button class="button col">报送</button>
+            <button class="button col" ng-click="toReview()">考核评价</button>
+            <button class="button col" ng-click="toScore()">自评得分</button>
+            <button class="button col" ng-click="toReport()">报送</button>
         </div>
     </ion-footer-bar>
 </ion-view>
