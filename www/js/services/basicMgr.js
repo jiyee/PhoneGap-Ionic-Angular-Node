@@ -1,6 +1,4 @@
-angular.module('css.services', [])
-
-.factory('BasicMgr', function($http, $q, $timeout) {
+app.factory('BasicMgrService', function($http, $q, $timeout) {
 
     var uniqueKey = "basic_mgr";
 
@@ -57,7 +55,7 @@ angular.module('css.services', [])
             if (data) {
                 try {
                     data = JSON.parse(data);
-                } catch(ex) {
+                } catch (ex) {
                     this.createReview(unitId, reviewDate, reviewType).then(function(data) {
                         localStorage.setItem(reviewId, JSON.stringify(data));
                         deferred.resolve(data);
@@ -71,6 +69,29 @@ angular.module('css.services', [])
                     deferred.resolve(data);
                 });
             }
+
+            return deferred.promise;
+        },
+
+        getReviewItem: function (unitId, reviewDate, reviewType, itemId, subItemId) {
+            var deferred = $q.defer();
+
+            this.getReview(unitId, reviewDate, reviewType).then(function(data) {
+                var ret = [];
+                angular.forEach(data.items, function(item, key) {
+                    if (item.index === itemId) {
+                        angular.forEach(item.items, function(subitem, key) {
+                            if (subitem.index === subItemId) {
+                                ret = subitem;
+                                return;
+                            }
+                        });
+                    }
+                });
+                deferred.resolve(ret);
+            }, function(err) {
+                deferred.reject(err);
+            });
 
             return deferred.promise;
         },
@@ -92,7 +113,7 @@ angular.module('css.services', [])
                 angular.forEach(level1.items, function(level2) {
                     var status3 = 0;
                     angular.forEach(level2.items, function(level3) {
-                        status3 += level3.status;
+                        status3 += level3.status > 0 ? 1 : 0;
                     });
 
                     if (status3 === level2.items.length) {
@@ -101,7 +122,7 @@ angular.module('css.services', [])
                         level2.status = 0;
                     }
 
-                    status2 += level2.status;
+                    status2 += level2.status > 0 ? 1 : 0;
                 });
 
                 if (status2 === level1.items.length) {
@@ -111,10 +132,36 @@ angular.module('css.services', [])
                 }
             });
 
-            localStorage.setItem(reviewId, JSON.stringify(data));
+            localStorage.setItem(reviewId, JSON.stringify(reviewData));
 
             $timeout(function() {
                 deferred.resolve();
+            });
+
+            return deferred.promise;
+        },
+
+        setReviewItem: function (unitId, reviewDate, reviewType, itemId, subItemId, newItem) {
+            var deferred = $q.defer();
+            var that = this;
+
+            this.getReview(unitId, reviewDate, reviewType).then(function(data) {
+                angular.forEach(data.items, function(item, key) {
+                    if (item.index === itemId) {
+                        angular.forEach(item.items, function(subitem, key) {
+                            if (subitem.index === subItemId) {
+                                item.items[key] = newItem;
+                                return;
+                            }
+                        });
+                    }
+                });
+
+                that.setReview(unitId, reviewDate, reviewType, data).then(function() {
+                    deferred.resolve();
+                });
+            }, function(err) {
+                deferred.reject(err);
             });
 
             return deferred.promise;
@@ -138,7 +185,7 @@ angular.module('css.services', [])
             if (data) {
                 try {
                     data = JSON.parse(data);
-                } catch(ex) {
+                } catch (ex) {
                     $timeout(function() {
                         deferred.reject("data parse error");
                     }, 0);
@@ -187,7 +234,7 @@ angular.module('css.services', [])
             if (data) {
                 try {
                     data = JSON.parse(data);
-                } catch(ex) {
+                } catch (ex) {
                     $timeout(function() {
                         deferred.reject("data parse error");
                     }, 0);

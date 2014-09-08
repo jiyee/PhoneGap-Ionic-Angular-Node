@@ -31,6 +31,10 @@
                         {
                             "xml": "<feature name=\"AppInstaller\"><param name=\"android-package\" value=\"fr.smile.mobile.appinstaller.CDVAppInstaller\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Camera\"><param name=\"android-package\" value=\"com.wezka.nativecamera.NativeCameraLauncher\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -40,7 +44,7 @@
                     "/*": [
                         {
                             "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
-                            "count": 3
+                            "count": 4
                         },
                         {
                             "xml": "<uses-permission android:name=\"android.permission.INSTALL_PACKAGES\" />",
@@ -48,6 +52,20 @@
                         },
                         {
                             "xml": "<uses-permission android:name=\"android.permission.RESTART_PACKAGES\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.CAMERA\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-feature android:name=\"android.hardware.camera.autofocus\" android:required=\"false\" />",
+                            "count": 1
+                        }
+                    ],
+                    "/manifest/application": [
+                        {
+                            "xml": "<activity android:label=\"nativecameraplugin\" android:name=\"com.wezka.nativecamera.CameraActivity\" android:screenOrientation=\"portrait\" android:theme=\"@android:style/Theme.NoTitleBar.Fullscreen\"></activity>",
                             "count": 1
                         }
                     ]
@@ -69,6 +87,9 @@
             "PACKAGE_NAME": "com.ionicframework.constructionsitesafty911664"
         },
         "fr.smile.mobile.appinstaller": {
+            "PACKAGE_NAME": "com.ionicframework.constructionsitesafty911664"
+        },
+        "com.wezka.nativecamera": {
             "PACKAGE_NAME": "com.ionicframework.constructionsitesafty911664"
         }
     },

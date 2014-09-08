@@ -6,13 +6,14 @@
 
     <ion-content padding="true">
         <ion-list>
-            <ion-item ng-repeat-start="item in data.items" class="item-icon-right item" style="background-color: #eee; font-weight: bold;" ng-click="toggle($event.target, $index, item)">
+            <ion-item ng-repeat-start="item in data.items" class="item-icon-right item" style="background-color: #eee; font-weight: bold;" ng-click="toggle($index, item)">
                 <i class="icon ion-chevron-right" style="font-size: 16px; -webkit-transform: rotate({{shouldHideSubitems[item.index]|rotate}});"></i>
                 {{item.index}}. {{item.name}}
             </ion-item>
-            <ion-item ng-hide="shouldHideSubitems[item.index] == true" ng-repeat="subitem in item.items" class="item-icon-right item sub-item-{{item.index}}" ng-repeat-end>
+            <ion-item ng-hide="shouldHideSubitems[item.index] == true" ng-repeat="subitem in item.items" class="item-icon-right item sub-item-{{item.index}}" ng-click="review($index, item, subitem)" ng-repeat-end>
                 <i class="icon ion-chevron-right" style="font-size: 16px;"></i>
                 {{subitem.index}}. {{subitem.name}}
+                <i class="ion-checkmark balanced" style="font-size: 16px;" ng-show="subitem.status"></i>
             </ion-item>
         </ion-list>
     </ion-content>
