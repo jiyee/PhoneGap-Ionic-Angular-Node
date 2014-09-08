@@ -12,7 +12,7 @@
 
             <div class="item item-text-wrap">
                 <label for="{{score}}" ng-repeat="score in item.range" style="padding-right: 16px; font-size: 16px; line-height: 2em;">
-                    <input type="radio" name="group-{{item.index}}" value="{{score}}" style="width: 16px; height: 16px;" ng-model="item.score" ng-change="changeScore(item, score)"> {{score}}分
+                    <input type="radio" name="group-{{item.index}}" value="{{score}}" style="width: 16px; height: 16px;" ng-model="item.score" ng-click="changeScore(item, score)"> {{score}}分
                 </label>
             </div>
 
